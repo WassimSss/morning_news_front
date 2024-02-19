@@ -29,10 +29,8 @@ function Article(props) {
 			});
 	}
 
-	console.log(props.styles);
 	const hideArticle = () => {
 		dispatch(addHiddenArticle(props))
-		console.log(hiddenArticles);
 	}
 
 	let iconStyle = {};
