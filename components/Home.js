@@ -13,7 +13,7 @@ function Home() {
   const hiddenArticles = useSelector((state) => state.hiddenArticles.value);
 
   useEffect(() => {
-    fetch('http://localhost:3000/articles')
+    fetch('https://morning-news-back-zeta.vercel.app/articles')
       .then(response => response.json())
       .then(data => {
         setTopArticle(data.articles[0]);
